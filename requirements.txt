@@ -1,0 +1,4 @@
+dj-database-url==4.8.0
+gunicorn == 23.2
+django == 4.2.6
+psycopg2
