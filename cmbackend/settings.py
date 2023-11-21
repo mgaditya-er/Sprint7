@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'cmbackend.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(
+    'default': dj-database-url.config(
         default=os.environ.get('DATABASE_URL')
     )
 }
