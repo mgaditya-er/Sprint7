@@ -84,7 +84,9 @@ WSGI_APPLICATION = 'cmbackend.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL')
+        default=os.environ.get('DATABASE_URL','postgres://dpg-cl9g54pm6hds73d6j0u0-a/test1'),
+        #  engine='django.db.backends.postgresql',
+        #  host='dpg-cl9g54pm6hds73d6j0u0-a',
     )
 }
 
