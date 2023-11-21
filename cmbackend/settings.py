@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'cmbackend.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj-database-url.config(
+    'default': dj_database_url.config(
         default=os.environ.get('DATABASE_URL')
     )
 }
